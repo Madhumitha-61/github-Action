@@ -1,0 +1,9 @@
+name: Github
+on: workflow_dispatch
+jobs:
+  My_first_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello
+        run: echo "Hello world"
+
