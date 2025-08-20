@@ -1,0 +1,16 @@
+name: Git checkout
+on: push
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+      - name: Install node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x' # Use the latest LTS version
+      - name: Install dependencies
+        run: npm ci
+      - name: Run tests
+        run: npm test

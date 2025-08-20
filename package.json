@@ -1,0 +1,11 @@
+{
+  "name": "github-action",
+  "version": "1.0.0",
+  "description": "A sample project for GitHub Actions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Tests passed successfully!\" && exit 0"
+  },
+  "author": "",
+  "license": "ISC"
+}
